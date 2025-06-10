@@ -18,6 +18,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-
+# Busca la carpeta y haga este paso (por eso usamos el pipe | )
       - name: install dependecies
-        run: npm install
+        run: | 
+        cd angularProject
+        npm install
