@@ -29,7 +29,7 @@ jobs:
 
 # Esto es un artifact para github pages
       - name: Build page
-        run: nom run build
+        run: npm run build
 
 # Proviene del marketplace (upload-github-pages-artifact)
       - name: Upload artifact
