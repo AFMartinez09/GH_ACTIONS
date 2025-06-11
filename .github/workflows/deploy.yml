@@ -30,6 +30,14 @@ jobs:
 # Esto es un artifact para github pages
       - name: Build page
         run: nom run build
+
+# Proviene del marketplace (upload-github-pages-artifact)
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: angularProject/public
+
+
   deploy:
   # Forzamos a que se ejecute (es util cuando el step nos envía un mensaje  )
     if: ${{ always() }} 
