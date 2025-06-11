@@ -30,6 +30,7 @@ jobs:
 # Esto es un artifact para github pages
       - name: Build page
         run: npm run build
+        working-directory: angularProject
 
 # Proviene del marketplace (upload-github-pages-artifact)
       - name: Upload artifact
