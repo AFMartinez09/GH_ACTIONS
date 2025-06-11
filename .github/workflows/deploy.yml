@@ -23,9 +23,9 @@ jobs:
         run: | 
           cd angularProject
           npm install
-
-      - name: Run test
-        run: npm run test
+# Cuando tengamos test y querramos que se valide si falla no se ejecuta el resto
+      # - name: Run test
+      #   run: npm run test
 
   deploy:
     runs-on: ubuntu-latest
