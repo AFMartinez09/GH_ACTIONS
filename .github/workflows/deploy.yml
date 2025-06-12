@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: first_job
 
-    enviroment:
+    environment:
     # Esta action requiere que esto se exponga a nivel job
       name: github-pages
       url: ${{ steps.deployment-pages.outputs.page_url }} 
