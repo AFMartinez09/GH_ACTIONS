@@ -41,9 +41,14 @@ jobs:
 
   deploy:
   # Forzamos a que se ejecute (es util cuando el step nos envía un mensaje  )
-    if: ${{ always() }} 
+    # if: ${{ always() }} 
     runs-on: ubuntu-latest
     needs: first_job
+
+# Que puede hacer en el repo y que no puede hacer
+    permissions:
+      pages: write
+      id-token: write
 
     environment:
     # Esta action requiere que esto se exponga a nivel job
