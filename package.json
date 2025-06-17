@@ -1,5 +1,5 @@
 {
-  "name": "@afmartinez09/gh_actions",
+  "name": "@AFMartinez09/gh_actions",
   "version": "1.0.0",
   "description": "Cómo crear un package y subirlo a gitHub",
   "main": "index.js",
