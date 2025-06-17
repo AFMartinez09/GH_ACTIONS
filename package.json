@@ -6,9 +6,20 @@
   "scripts": {
     "test": "node test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AFMartinez09/GH_ACTIONS.git"
+  },
   "keywords": [],
   "author": "Lalo landa",
   "license": "ISC",
+  "publishConfig": {
+    "url": "https://npm.pkg.github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/AFMartinez09/GH_ACTIONS/issues"
+  },
+  "homepage": "https://github.com/AFMartinez09/GH_ACTIONS#readme",
   "dependencies": {
     "canvas": "^3.1.0",
     "chart.js": "^4.5.0",
