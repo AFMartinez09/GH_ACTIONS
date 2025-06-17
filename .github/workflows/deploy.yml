@@ -62,3 +62,8 @@ jobs:
 # Ver como funciona este paquete
 # Se obtine la url a traves de pages a traves de su id
         uses: actions/deploy-pages@v4
+
+  notify:
+    runs-on: ubuntu-latest
+    needs: deploy
+    
